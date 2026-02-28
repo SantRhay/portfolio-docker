@@ -95,3 +95,43 @@ nav a:hover {
 header {
   margin-top: 80px;
 }
+
+.subtitle {
+  font-size: 18px;
+  opacity: 0.8;
+  margin-bottom: 20px;
+}
+
+.cta {
+  margin-top: 20px;
+}
+
+.btn {
+  background: #38bdf8;
+  color: #0f172a;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 10px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #0ea5e9;
+}
+
+.btn-outline {
+  border: 2px solid #38bdf8;
+  padding: 10px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #38bdf8;
+  margin: 10px;
+  transition: 0.3s;
+}
+
+.btn-outline:hover {
+  background: #38bdf8;
+  color: #0f172a;
+}
