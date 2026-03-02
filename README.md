@@ -23,4 +23,4 @@ docker-compose up -d
 ## 👩‍💻 Desenvolvido por
 Rayane Santana
 
-## Nova Atualização teste CI/CD automático novamente
+## Atualização teste CI/CD automático.
