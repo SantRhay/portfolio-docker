@@ -1,26 +1,64 @@
-# 🚀 Portfólio Docker
+🚀 Projeto DevOps na AWS
 
-Projeto de portfólio pessoal containerizado com Docker.
+🌍 Aplicação em Produção
 
-## 🐳 Tecnologias utilizadas
+🔗 https://devrhay.duckdns.org
 
-- Docker
-- Docker Compose
-- Nginx
-- HTML + CSS
+Aplicação publicada em ambiente real na AWS com HTTPS configurado manualmente.
 
-## ▶️ Como executar
+⸻
 
-### Build da imagem
-docker build -t portfolio-docker .
+🏗 Arquitetura da Solução
 
-### Executar container
-docker run -p 8080:80 portfolio-docker
+EC2 (Linux Ubuntu)
+⬇
+Docker
+⬇
+Docker Compose
+⬇
+Nginx (Reverse Proxy)
+⬇
+Let’s Encrypt (SSL)
+⬇
+Domínio público via DuckDNS
 
-Ou com Docker Compose:
-docker-compose up -d
+⸻
 
-## 👩‍💻 Desenvolvido por
-Rayane Santana
+⚙️ Tecnologias Utilizadas
+	•	AWS EC2
+	•	Linux (Ubuntu Server)
+	•	Docker
+	•	Docker Compose
+	•	Nginx
+	•	Certbot
+	•	Let’s Encrypt
+	•	DuckDNS
 
-## Atualização teste CI/CD automático.
+⸻
+
+🔐 Segurança
+	•	Configuração manual de HTTPS
+	•	Geração de certificado SSL via Certbot
+	•	Redirecionamento automático HTTP → HTTPS
+	•	Porta 443 exposta via Docker Compose
+	•	Configuração de Security Group na AWS
+
+⸻
+
+🚀 Processo de Deploy
+	1.	Provisionamento manual da instância EC2
+	2.	Configuração de regras de segurança (80, 443, 22)
+	3.	Containerização da aplicação
+	4.	Configuração do Nginx
+	5.	Geração e instalação de certificado SSL
+	6.	Deploy via Docker Compose
+
+⸻
+
+📌 Objetivo
+
+Projeto prático para demonstrar conhecimentos em:
+	•	Infraestrutura em Cloud
+	•	Containerização
+	•	Segurança de aplicações
+	•	Deploy em produção
